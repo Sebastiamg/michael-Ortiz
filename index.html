@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App TypeScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/styles/tailwind.css">
+</head>
+
+<body class="bg-gradient-to-l from-gray-700 to-gray-800">
+    <h1 class="font-bold text-3xl mx-auto text-center bg-gradient-to-r from-gray-600 to-gray-700 outline outline-b-4 outline-black">MICHAEL ORTIZ</h1>
+    <div class="flex flex-center flex-wrap">
+    <!-- fom 1 -->  
+        <form id="form" class="my-5 w-fit mx-auto bg-gradient-to-l from-slate-700 to-slate-800 flex flex-col rounded-lg shadow-xl shadow-black h-fit" data-interface="Student">
+            <h1 class="font-bold mx-auto text-xl mt-3">Student</h1>
+
+            <label for="id" class="font-bold px-5 text-black">Id: <input name="id" class="w-full my-3 rounded-lg px-2 py-1" type="number" id="id"></label>
+            <label for="fullname" class="font-bold px-5 text-black">Fullname: <input name="fullname" class="w-full my-3 rounded-lg px-2 py-1" type="text" id="fullname"></label>
+            <label for="idCard" class="font-bold px-5 text-black">IdCard: <input name="idCard" class="w-full my-3 rounded-lg px-2 py-1" type="number" id="idCard"></label>
+            <label for="direction" class="font-bold px-5 text-black">Direction: <input name="direction" class="w-full my-3 rounded-lg px-2 py-1" type="text" id="direction"></label>
+            <label for="enrollment" class="font-bold px-5 text-black">Enrollment: <input name="enrollment" class="w-full my-3 rounded-lg px-2 py-1" type="number" id="enrollment"></label>
+            <label for="level" class="font-bold px-5 text-black">Level: <input name="level" class="w-full my-3 rounded-lg px-2 py-1" type="number" id="level"></label>
+
+            <input class="my-3 w-10/12 px-5 bg-slate-900 rounded-lg mx-auto py-2 cursor-pointer hover:bg-zinc-900 hover:text-slate-400 font-bold" type="submit" name="submit" id="submit" value="Submit">
+        </form>
+    <!-- form 2 -->
+        <form id="form2 " class="my-5 w-fit mx-auto bg-gradient-to-l from-slate-700 to-slate-800 flex flex-col rounded-lg shadow-xl shadow-black h-fit" data-interface="Teacher">
+            <h1 class="font-bold mx-auto text-xl mt-3">Teacher</h1>
+
+            <label for="id1" class="font-bold px-5 text-black">id: <input name="id" class="w-full my-3 rounded-lg px-2 py-1" type="number" id="id"></label>
+            <label for="Fullname1" class="font-bold px-5 text-black">Fullname: <input name="fullname" class="w-full my-3 rounded-lg px-2 py-1" type="text" id="Fullname1"></label>
+            <label for="idCard1" class="font-bold px-5 text-black">IdCard: <input name="idCard" class="w-full my-3 rounded-lg px-2 py-1" type="number" id="idCard"></label>
+            <label for="direction1" class="font-bold px-5 text-black">Direction: <input name="direction" class="w-full my-3 rounded-lg px-2 py-1" type="text" id="direction"></label>
+            <label for="enrollment1" class="font-bold px-5 text-black">Enrollment: <input name="enrollment" class="w-full my-3 rounded-lg px-2 py-1" type="number" id="title"></label>
+            <label for="level" class="font-bold px-5 text-black">Level: <input name="level" class="w-full my-3 rounded-lg px-2 py-1" type="text" id="number"></label>
+            <label for="asignatura" class="font-bold px-5 text-black">Asignatura: <select name="asignatura" id="matter" class="w-full my-3 rounded-lg px-2 py-1"></select>
+            </label>
+            
+            <input class="my-3 w-10/12 px-5 bg-slate-900 rounded-lg mx-auto py-2 cursor-pointer hover:bg-zinc-900 hover:text-slate-400 font-bold" type="submit" name="submit" id="submit" value="Submit">
+        </form>
+    <!-- form 3 and 4 -->
+    <div class="flex mx-5">
+        <form id="form3" class="my-5 w-fit mx-auto bg-gradient-to-l from-slate-700 to-slate-800 flex flex-col rounded-lg shadow-xl shadow-black h-fit" data-interface="GradeBookSetup">
+            <h1 class="font-bold mx-auto text-xl mt-3">Grade Book Setup</h1>
+
+            <label for="value" class="font-bold px-5 text-black">Value: <input name="value" class="w-full my-3 rounded-lg px-2 py-1" type="number" id="value"></label>
+            <label for="course" class="font-bold px-5 text-black">Course: <select name="course" id="course" class="w-full my-3 rounded-lg px-2 py-1"></select></label>
+            <label for="activity" class="font-bold px-5 text-black">Activity: <select name="activity" id="activity" class="w-full my-3 rounded-lg px-2 py-1"></select></label>
+            <label for="maxGrade" class="font-bold px-5 text-black">Max grade: <input name="maxGrade" class="w-full my-3 rounded-lg px-2 py-1" type="number" id="maxGrade"></label>
+            
+            <input class="my-3 w-10/12 px-5 bg-slate-900 rounded-lg mx-auto py-2 cursor-pointer hover:bg-zinc-900 hover:text-slate-400 font-bold" type="submit" name="submit" id="submit" value="Submit">
+        </form>
+        <div class="flex flex-col mx-3">
+            <div id="form4" class="my-5 w-fit mx-auto bg-gradient-to-l from-slate-700 to-slate-800 flex flex-col rounded-lg shadow-xl shadow-black h-fit" data-interface="GradeBookSetup">
+                <label for="activity2" class="font-bold px-5 text-black">Actividad: <input name="activity2" class="w-full my-3 rounded-lg px-2 py-1" type="text" id="activity2"></label>
+                <input class="my-3 w-10/12 px-5 bg-slate-900 rounded-lg mx-auto py-2 cursor-pointer hover:bg-zinc-900 hover:text-slate-400 font-bold submitAct" type="submit" name="submit" id="submitAct1" value="Submit" data-optTarget="activity">
+            </div>
+
+            <div id="form5" class="my-5 w-fit mx-auto bg-gradient-to-l from-slate-700 to-slate-800 flex flex-col rounded-lg shadow-xl shadow-black h-fit" data-interface="GradeBookSetup">
+                <label for="course2" class="font-bold px-5 text-black">Course: <input name="activity2" class="w-full my-3 rounded-lg px-2 py-1" type="text" id="course2"></label>
+                <input class="my-3 w-10/12 px-5 bg-slate-900 rounded-lg mx-auto py-2 cursor-pointer hover:bg-zinc-900 hover:text-slate-400 font-bold submitAct" type="submit" name="submit" id="submitAct2" value="Submit" data-optTarget="course">
+            </div>
+        </div>
+        <form id="form6" class="my-5 w-fit mx-auto bg-gradient-to-l from-slate-700 to-slate-800 flex flex-col rounded-lg shadow-xl shadow-black h-fit" data-interface="SummayGrades">
+            <h1 class="font-bold mx-auto text-xl mt-3">Asignment Grade</h1>
+
+            <label for="student" class="font-bold px-5 text-black">Student: <select name="student" class="w-full my-3 rounded-lg px-2 py-1" type="text" id="student" readonly></select></label>
+            <label for="teacher" class="font-bold px-5 text-black">Teacher: <select name="teacher" class="w-full my-3 rounded-lg px-2 py-1" type="text" id="teacher" readonly></select></label>
+            <label for="course1" class="font-bold px-5 text-black">Course: <select name="course1" class="w-full my-3 rounded-lg px-2 py-1" type="text" id="course1" readonly></select></label>
+            <label for="activity3" class="font-bold px-5 text-black">Activity: <select name="activity3" class="w-full my-3 rounded-lg px-2 py-1" type="text" id="activity3" readonly></select></label>
+            <label for="mgrade" class="font-bold px-5 text-black">Grade: <input name="mgrade" class="w-full my-3 rounded-lg px-2 py-1" type="number" id="mgrade" ></label>
+
+            <span id="status" class="font-bold text-amber-500 mx-auto"></span>
+            <input class="my-3 w-10/12 px-5 bg-slate-900 rounded-lg mx-auto py-2 cursor-pointer hover:bg-zinc-900 hover:text-slate-400 font-bold" type="submit" name="submit" id="submit" value="Submit">
+        </form>
+    </div>
+    </div>
+
+    <table class="mx-auto my-3 border-4 border-slate-900" id="table">
+        <thead>
+            <tr>
+                <th class="px-5 border-2 border-slate-900">Student</th>
+                <th class="px-5 border-2 border-slate-900">Teacher</th>
+                <th class="px-5 border-2 border-slate-900">Course</th>
+                <th class="px-5 border-2 border-slate-900">Activity</th>
+                <th class="px-5 border-2 border-slate-900">Grade</th>
+                <th class="px-5 border-2 border-slate-900">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+        
+    <script>let exports = {}; </script>
+    <script src="dist/main.js"></script>
+</body>
+</html>
